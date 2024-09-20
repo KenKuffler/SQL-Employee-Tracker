@@ -1,0 +1,10 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "module": "CommonJS",  // CommonJS module system for Node.js
+    "target": "ES6",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+  }
+}
