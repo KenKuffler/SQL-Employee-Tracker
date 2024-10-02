@@ -12,6 +12,8 @@ import {
   viewEmployeesByManager,
   viewEmployeesByDepartment,
   deleteDepartment,
+  deleteRole,
+  deleteEmployee,
   viewDepartmentBudget
 } from './queries';  // Import all functions from queries.ts
 
