@@ -227,6 +227,40 @@ export async function deleteDepartment() {
   }
 }
 
+// Delete a role
+export async function deleteRole() {
+  try {
+    const { roleId } = await inquirer.prompt([
+      {
+        type: 'input',
+        name: 'roleId',
+        message: 'Enter the role ID to delete:',
+      }
+    ]);
+    await pool.query('DELETE FROM role WHERE id = $1', [roleId]);
+    console.log(`Deleted role with ID: ${roleId}`);
+  } catch (err) {
+    console.error('Error deleting role:', err);
+  }
+}
+
+// Delete an employee
+export async function deleteEmployee() {
+  try {
+    const { employeeId } = await inquirer.prompt([
+      {
+        type: 'input',
+        name: 'employeeId',
+        message: 'Enter the employee ID to delete:',
+      }
+    ]);
+    await pool.query('DELETE FROM employee WHERE id = $1', [employeeId]);
+    console.log(`Deleted employee with ID: ${employeeId}`);
+  } catch (err) {
+    console.error('Error deleting employee:', err);
+  }
+}
+
 // View the total utilized budget of a department
 export async function viewDepartmentBudget() {
   try {
