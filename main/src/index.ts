@@ -37,6 +37,8 @@ async function mainMenu() {
           'View employees by manager',
           'View employees by department',
           'Delete a department',
+          'Delete a role',
+          'Delete an employee',
           'View department budget',
           'Exit'
         ]
@@ -88,6 +90,14 @@ async function mainMenu() {
       case 'Delete a department':
         console.log('User selected: Delete a department');
         await deleteDepartment();
+        break;
+      case 'Delete a role':
+        console.log('User selected: Delete a role');
+        await deleteRole();
+        break;
+      case 'Delete an employee':
+        console.log('User selected: Delete an employee');
+        await deleteEmployee();
         break;
       case 'View department budget':
         console.log('User selected: View department budget');
