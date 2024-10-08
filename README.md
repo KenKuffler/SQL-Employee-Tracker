@@ -25,6 +25,8 @@ Once the .env file is created, you will need to initialize the database and seed
 ## Usage
 Now that the sql files have been initalized and the database instantiated, run "npm start" after navigating to the "main" directory in your terminal. From there the application will start and you should be able to view the initial supplied seed data with the options to view existing employees, departments, and roles. As well as use the additional features for the creation and removal of the respective categories. A detailed walkthrough video illustrating the installation and usage can be viewed below, as well as a link to the walkthrough on screencastify if one so chooses. As a final note, keep in mind that to delete a department or a role, no employee can be associated with that department or role. The employee will need to be removed first, before being able to remove the associated department and role.
 
+[![Demo](./assets/Screenshot%20(28).png)](./assets/walkthrough.webm.webm)
+
 ## Contribution
 Though interest is appreciated, no contributors are being accepted at this time.
 
